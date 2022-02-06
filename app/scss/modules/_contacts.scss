@@ -1,0 +1,56 @@
+.contacts {
+	white-space: nowrap;
+
+	&__title {
+		margin-bottom: 27px;
+		font-weight: 700;
+		font-size: 1.25rem;
+		letter-spacing: 0.03rem;
+		color: $blue-light;
+	}
+
+	&__item {
+		margin-bottom: 19px;
+		font-size: 0.9375rem;
+		letter-spacing: 0.03em;
+
+		&_margin-bottom {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 991px), (min-width: 320px) and (max-width: 767px) {
+		text-align: center;
+
+		&__title {
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+
+		&__item {
+			margin-bottom: 21px;
+			font-size: 1.125rem;
+
+			&_margin-bottom {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media (min-width: 320px) and (max-width: 576px) {
+
+		&__title {
+			font-size: 1.375rem;
+			margin-bottom: 10px;
+		}
+
+		&__item {
+			margin-bottom: 16px;
+			font-size: 0.9375rem;
+
+			&_margin-bottom {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
