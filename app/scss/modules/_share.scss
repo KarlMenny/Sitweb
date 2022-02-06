@@ -1,0 +1,27 @@
+.share {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	&__item {
+		margin-right: 30px;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+
+		&_margin-right {
+			margin-right: 0;
+		}
+
+		&:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+
+	&__link,
+	&__img {
+		display: block;
+	}
+}

@@ -1,0 +1,101 @@
+.burger-menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	border: 2px solid #00B9FF;
+	background-color: #000;
+	padding: 20px;
+	z-index: 2;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+
+	&__phones {
+		margin-bottom: 45px;
+	}
+
+	&__phone {
+		margin-bottom: 12px;
+
+		&_margin-bottom {
+			margin-bottom: 0;
+		}
+	}
+
+	&__items {
+		margin-bottom: 55px;
+	}
+
+	&__item {
+		margin-bottom: 30px;
+
+		&_margin-bottom {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		font-size: 1.125rem;
+		font-weight: 700;
+
+		&:hover {
+			color: #1FC2FF;
+		}
+	}
+
+	&__share {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	&__share img {
+		@include size(35px);
+	}
+
+	@media (min-width: 320px) and (max-width: 576px) {
+		width: 84%;
+
+		&__phones {
+			margin-bottom: 50px;
+		}
+
+		&__phone {
+			font-size: 0.8125rem;
+			font-weight: 700;
+			margin-bottom: 15px;
+
+			&_margin-bottom {
+				margin-bottom: 0;
+			}
+		}
+
+		&__items {
+			margin-bottom: 35px;
+		}
+
+		&__item {
+			font-size: 1rem;
+			margin-bottom: 25px;
+
+			&_margin-bottom {
+				margin-bottom: 0;
+			}
+		}
+
+		&__share li {
+			margin-right: 15px;
+		}
+
+		&__share li:last-child {
+			margin-right: 0;
+		}
+
+		&__share img {
+			@include size(22px);
+		}
+	}
+}
